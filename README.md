@@ -1,19 +1,17 @@
 # Automated Hate Speech Detection and the Problem of Offensive Language
-Repository for Thomas Davidson, Dana Warmsley, Michael Macy, and Ingmar Weber. 2017. "Automated Hate Speech Detection and the Problem of Offensive Language." ICWSM. You read the paper [here](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15665).
-
-
-# NOTE: This repository is no longer actively maintained. Please do not post issues regarding the compatibility of the existing code with new versions of Python or the packages used.
-
-## 2019 NEWS
-We have a new paper on racial bias in this dataset and others, you can read it [here](https://arxiv.org/abs/1905.12516)
+This repository is forked from [the original authors' repository](https://github.com/t-davidson/hate-speech-and-offensive-language): Thomas Davidson, Dana Warmsley, Michael Macy, and Ingmar Weber. 2017. "Automated Hate Speech Detection and the Problem of Offensive Language." ICWSM. You can read the paper [here](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15665). It ports their python 2 code to python 3.
 
 
 ***WARNING: The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.***
 
-You can find our labeled data in the `data` directory. We have included them as a pickle file (Python 2.7) and as a CSV. You will also find a notebook in the `src` directory containing Python 2.7 code to replicate our analyses in the paper and a lexicon in the `lexicons` directory that we generated to try to more accurately classify hate speech. The `classifier` directory contains a script, instructions, and the necessary files to run our classifier on new data, a test case is provided.
+* The `data` directory contains the labeled data as a csv
+* The `src` directory contains Python 2.7 code to replicate the authors' analyses in the paper
+* The `lexicons` directory contains the lexicon they generated to try to more accurately classify hate speech
+* The `pickled_models` directory contains the models necessary for classification. These are not the same pkl files from the original repository, as those were pickled with Python 2 and therefore cannot be unpickled with Python 3. The pkl files in this repository have all been pickled with Python 3.
+* The `classifier` directory contains a script, instructions, and the necessary files to run the original authors' classifier on new data, and a test case is provided.
 
 
-***Please cite our paper in any published work that uses any of these resources.***
+***Please cite the original authors' paper in any published work that uses any of these resources.***
 ~~~
 @inproceedings{hateoffensive,
   title = {Automated Hate Speech Detection and the Problem of Offensive Language},
@@ -26,7 +24,7 @@ You can find our labeled data in the `data` directory. We have included them as 
   }
 ~~~
 
-***Contact***
+***Contact Original Authors***
 We would also appreciate it if you could fill out this short [form](https://docs.google.com/forms/d/e/1FAIpQLSdrPNlfVBlqxun2tivzAtsZaOoPC5YYMocn-xscCgeRakLXHg/viewform?usp=pp_url&entry.1506871634&entry.147453066&entry.1390333885&entry.516829772) if you are interested in using our data so we can keep track of how these data are used and get in contact with researchers working on similar problems.
 
 If you have any questions please contact `trd54 at cornell dot edu`.
