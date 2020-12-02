@@ -4,13 +4,13 @@ This repository is forked from [the original authors' repository](https://github
 
 ***WARNING: The data, lexicons, and notebooks all contain content that is racist, sexist, homophobic, and offensive in many other ways.***
 
-Unchanged repositories:
-* The `src` directory contains Python 2.7 and Python 3.6 code to replicate the authors' analyses in the paper. It has not been edited in any way in this repository
+Unchanged directories:
+* The `src` directory contains Python 2.7 and Python 3.6 code to replicate the authors' analyses in the paper. It has not been edited in any way in this fork
 * The `lexicons` directory contains the lexicon they generated to try to more accurately classify hate speech
 
-Changed/New Repositories:
+Changed/New directories:
 * The `data` directory contains the labeled data as a csv. The pickle file containing the same data has been removed since it cannot be unpickled by Python 3.
-* The new `pickled_models` directory contains the models necessary for classification. These are not the same pkl files from the original repository, as those were pickled with Python 2 and therefore cannot be unpickled with Python 3. The pkl files in this repository have all been pickled with Python 3.
+* The new `pickled_models` directory contains the models necessary for classification. These are not the same pkl files from the original repository, as those were pickled with Python 2 and therefore cannot be unpickled with Python 3. The pkl files in this directory have all been pickled with Python 3.
 * The `classifier` directory contains a script, instructions, and the necessary files to run the original authors' classifier on new data, and a test case is provided. To retrain the model and pickle it, simply re-run the train_models.py script.
 
 
